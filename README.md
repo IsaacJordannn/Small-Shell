@@ -1,20 +1,20 @@
 # Small-Shell
 In directory where smallshell.c is located, compile with:
 ```
-gcc -std=gnu99 -o smallsh smallsh.c
+gcc -std=gnu99 -o smallshell smallshell.c
 ```
 ## Sample Program Execution
 ```
-$ smallsh
+$ smallshell
 : ls
-junk   smallsh    smallsh.c
+junk   smallshell    smallshell.c
 : ls > junk
 : status
 exit value 0
 : cat junk
 junk
-smallsh
-smallsh.c
+smallshell
+smallshell.c
 : wc < junk > junk2
 : wc < junk
        3       3      23
@@ -37,7 +37,7 @@ background pid is 4923
   PID TTY          TIME CMD
  4923 pts/0    00:00:00 sleep
  4564 pts/0    00:00:03 bash
- 4867 pts/0    00:01:32 smallsh
+ 4867 pts/0    00:01:32 smallshell
  4927 pts/0    00:00:00 ps
 :
 : # that was a blank command line, this is a comment line
@@ -49,13 +49,13 @@ background pid is 4941
 : kill -15 4941
 background pid 4941 is done: terminated by signal 15
 : pwd
-/nfs/stak/users/chaudhrn/CS344/prog3
+/nfs/stak/users/---/---/---
 : cd
 : pwd
-/nfs/stak/users/chaudhrn
-: cd CS344
+/nfs/stak/users/---
+: cd ---
 : pwd
-/nfs/stak/users/chaudhrn/CS344
+/nfs/stak/users/---/---
 : echo 4867
 4867
 : echo $$
