@@ -4,6 +4,7 @@ In directory where smallsh.c is located, compile with:
 gcc -std=gnu99 -o smallsh smallsh.c
 
 ## Sample Program Execution
+```
 $ smallsh
 : ls
 junk   smallsh    smallsh.c
@@ -76,3 +77,4 @@ background pid is 4963
  Mon Jan 2 11:24:39 PST 2017
 : exit
 $
+```
